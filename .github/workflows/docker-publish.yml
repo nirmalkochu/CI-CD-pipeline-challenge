@@ -24,10 +24,9 @@ env:
 
 jobs:
   integration:
-    uses: ./.github/workflows/python-ci-workflow.yml
+    uses: nirmalkochu/CI-CD_pipeline/.github/workflows/python-ci-workflow.yml@main
     permissions: 
       contents: read
-      checks: write
     
   build: 
     needs: [integration]
